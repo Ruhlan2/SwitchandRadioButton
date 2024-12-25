@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hesab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Hesab: 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesab">
+
+        <RadioButton
+            android:id="@+id/discount10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="10 %" />
+
+        <RadioButton
+            android:id="@+id/discount15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15 %" />
+
+        <RadioButton
+            android:id="@+id/discount20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20 %" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonHesabla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Hesabla"
+        app:layout_constraintEnd_toEndOf="@+id/radioDiscount"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/radioDiscount"
+        app:layout_constraintTop_toBottomOf="@+id/radioDiscount" />
+
+    <TextView
+        android:id="@+id/endirimliQiymet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Hesab: 0"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHesabla"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/buttonHesabla"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHesabla" />
+</androidx.constraintlayout.widget.ConstraintLayout>
